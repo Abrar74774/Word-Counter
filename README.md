@@ -1,0 +1,1 @@
+# A javascript app for finding number of words in the textarea
