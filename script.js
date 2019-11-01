@@ -16,4 +16,6 @@ function splitWords() {
 }
  
 txt.addEventListener("input", splitWords);
+txt.addEventListener("focus", function(){txt.style.boxShadow = "0px 0px 4px 4px dodgerblue"});
+txt.addEventListener("blur", function(){txt.style.boxShadow = "0 0 0 0 dodgerblue"});
 
