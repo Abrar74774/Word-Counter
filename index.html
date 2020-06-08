@@ -1,16 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Word Counter</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body,
+    html {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      background: #fcfcfc;
+      font-family: 'Playfair Display', serif;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 60px;
+    }
+
+    .inputarea {
+      display: block;
+      border: 1px solid #00000044;
+      font-family: 'Playfair Display', serif;
+      box-shadow: 0 0 0 0 #00000030;
+      border-radius: 10px;
+      transition: box-shadow 0.2s;
+      height: 30rem;
+      width: 80vw;
+      margin: 20px 10vw;
+      padding: 2rem;
+      font-size: 1.8rem;
+      position: relative;
+    }
+
+    ::-webkit-input-placeholder {
+      /* Edge */
+      font-family: 'Playfair Display';
+    }
+
+    :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      font-family: 'Playfair Display';
+    }
+
+    ::placeholder {
+      font-family: 'Playfair Display';
+    }
+
+    #output {
+      background-color: white;
+      border: 1px solid #00000044;
+      font-size: 28px;
+      border-radius: 28px;
+      width: 200px;
+      height: 56px;
+      margin: 20px auto;
+      padding: 5px 15px;
+      text-align: center;
+    }
+  </style>
 </head>
+
 <body>
   <h1>Word Counter</h1>
-  <textarea type="text" class="inputarea" id="input">hehe</textarea>
-  <div class="output" id="output">hehehe</div>
+  <textarea type="text" class="inputarea" id="input" placeholder="Text goes here..."></textarea>
+  <div id="output">00</div>
   <script src="script.js"></script>
 </body>
+
 </html>
